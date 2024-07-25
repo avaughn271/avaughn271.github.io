@@ -17,98 +17,14 @@ categories:
 	<div class="col-lg-12">
 		<div class="smallhead">
       <p>
-		I am a PhD student in the <a href="https://ccb.berkeley.edu">Computational Biology</a> program at UC Berkeley in the  <a href="https://nielsen-lab.github.io">Nielsen    
-		   Lab</a>. My interests lie in statistical genetics, methods development, human evolution, and ancient DNA. 
-		  for Computational Biology</a> at <a href="https://www.berkeley.edu">UC Berkeley</a>.
-		   We are also affiliated with the <a href="https://globe.ku.dk/research/lundbeck-foundation-geogenetics-centre/">Lundbeck Foundation Center for GeoGenetics</a> at the University of Copenhagen.
-		   You can read more about our research <a href="/research/">here</a>.
+		I am a PhD student in the <a href="https://ccb.berkeley.edu">Computational Biology</a> program at 
+		 UC Berkeley in the  <a href="https://nielsen-lab.github.io">Nielsen    
+		   Lab</a>. My interests lie in statistical genetics, methods development,  
+		   human evolution, and ancient DNA. 
+		   You can read more about my research projects  <a href="/research/">here</a>.
       </p>
 		</div>
 	</div>
 </div>
 
 <div class="bigspacer"></div>
-<div class="bigspacer"></div>
-
-<div class="spacer"></div>
-
-<div class="row">
-	<div class="col-lg-12">
-		<div class="head">
-			<a class="off" href="/papers/">Recent papers</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="row">
-	{% for paper in site.categories.papers limit:4 %}
-	<div class="col-lg-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ paper.pdf }}">
-				{{ paper.title }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ paper.date | date: "%-d %b %Y" }}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
-
-<div class="spacer"></div>
-
-
-<div class="row">
-	{% for project in site.data.projects limit:4 %}
-	<div class="col-lg-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-edit fa-fw"></i>
-				<a class="off" href="{{ project.url }}">
-				{{ project.title }} - {{ project.description }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ project.commits.first.date | date: "%-d %b %Y" }}
-				</a>
-				by
-				<a class="off" href="{{ project.commits.first.author_url }}">
-				{{ project.commits.first.author_login }}
-				</a>
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
-
-<div class="spacer"></div>
-
-<div id="footer">
-	<nav class="navbar navbar-expand-md navbar-light bg-navbar">
-		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav nav-pills ml-auto">
-					<li class="nav-link">
-					<a class="mx-1" href="/misc/about/">About</a>
-					</li>
-					<li class="nav-link">
-					<a class="mx-1" href="/misc/join/">Join</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</div>
