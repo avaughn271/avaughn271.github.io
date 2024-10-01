@@ -3,7 +3,7 @@ layout: paper
 title: Inference and applications of ancestral recombination graphs
 ref:  Nielsen, Vaughn, and Deng 2024. Nature Reviews Genetics.
 year: 2024
-pdf: /pdfs/papers/landscape.pdf
+pdf: /pdfs/papers/argreview.pdf
 image: /images/papers/argreview.png
 ---
 
